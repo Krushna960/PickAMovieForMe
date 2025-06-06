@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img height="40" src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2020/09/logo_c.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="genre.html">Genre</a></li>
+            <li><a href="topactor.html">Top Actors</a></li>
+            <li><a href="blog.html">Blog</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <div class="main-section">
+        <div class="overlay">
+            <h1 class="title">MOVIE RECOMMENDATION ENGINE</h1>
+            <p class="subtitle">Can't decide between thousands of movies?</p>
+            <p class="subtitle">Answer a few questions, and we'll do the work!</p>
+            <button class="start-btn" onclick="redirectToQuestionnaire()">Start Now</button>
+        </div>
+    </div>
+
+    <!-- Search Results -->
+    <div id="search-results" class="search-results"></div>
+
+    <footer>
+        <!-- <p>&copy; 2025 Movie Guru. All rights reserved.</p> -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

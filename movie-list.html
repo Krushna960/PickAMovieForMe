@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Biggest Upcoming Movies</title>
+    <!-- <link rel="stylesheet" href="blog.css"> -->
+    <style>
+        /* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #bbbbbb;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+#movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.movie-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.movie-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.movie-item p {
+    color: #bbbbbb;
+    margin: 10px 0;
+    text-align:justify;
+}
+
+.movie-item strong {
+    color: #ff9800;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/736x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 80px 10px;
+    }
+
+    #movie-list {
+        grid-template-columns: 1fr;
+    }
+
+    .movie-item {
+        text-align: center;
+    }
+}
+
+    </style>
+</head>
+<body class="blog">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img height="40" src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2020/09/logo_c.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="genre.html">Genre</a></li>
+                <li><a href="#">Top Actors</a></li>
+                <li><a href="blog.html">Blog</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <h1>The Biggest Upcoming Movies</h1> -->
+        <section id="movie-list">
+            <div class="movie-item">
+                <h3>1.Avatar: The Way of Water</h3>
+                <img src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2022/04/avatar-2-poster.jpg" alt="Avatar: The Way of Water"> 
+                <p>Avatar: The Way of Water is a 2022 epic science fiction film co-produced, co-edited, and directed by James Cameron, who co-wrote the screenplay with Rick Jaffa and Amanda Silver from a story the trio wrote with Josh Friedman and Shane Salerno. Distributed by 20th Century Studios, it is the sequel to Avatar (2009) and the second installment in the Avatar film series. It features Sam Worthington, Zoe Saldaña, Stephen Lang, Joel David Moore, CCH Pounder, Giovanni Ribisi, Dileep Rao and Matt Gerald reprising their roles from the first film, with Sigourney Weaver returning in an additional role[6] and Kate Winslet joining the cast. It follows a blue-skinned humanoid Na'vi named Jake Sully (Worthington) as he and his family, under renewed human threat, seek refuge with the aquatic Metkayina clan of Pandora, a habitable exomoon on which they live.</p>
+                <p><strong>Release Date:</strong> December 16, 2022</p>
+            </div>
+            <div class="movie-item">
+                <h3>2.Black Panther: Wakanda Forever</h3>
+                <img src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2022/04/black-panther-2-wakanda-forever-poster.jpg" alt="Black Panther: Wakanda Forever">
+                <p>Black Panther: Wakanda Forever is a 2022 American superhero film based on Marvel Comics featuring the character Shuri / Black Panther. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the sequel to Black Panther (2018) and the 30th film in the Marvel Cinematic Universe (MCU). Directed by Ryan Coogler, who co-wrote the screenplay with Joe Robert Cole, the film stars Letitia Wright as Shuri / Black Panther, alongside Lupita Nyong'o, Danai Gurira, Winston Duke, Florence Kasumba, Dominique Thorne, Michaela Coel, Mabel Cadena, Tenoch Huerta Mejía, Martin Freeman, Julia Louis-Dreyfus, and Angela Bassett. In the film, the leaders of Wakanda fight to protect their nation in the wake of King T'Challa's death.</p>
+                <p><strong>Release Date:</strong> November 11, 2022</p>
+            </div>
+            <div class="movie-item">
+                <h3>3.The Flash</h3>
+                <img src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2022/04/the-flash-2022-poster.jpg" alt="The Flash">                
+                <p>The Flash is a 2023 American superhero film based on the DC Comics character Barry Allen / Flash. Directed by Andy Muschietti from a screenplay by Christina Hodson and a story by Joby Harold and the writing team of John Francis Daley and Jonathan Goldstein, it is the 13th film in the DC Extended Universe (DCEU) produced by DC Films. Ezra Miller stars as Barry, who travels back in time to prevent his mother's death and becomes stranded in an alternate past. Sasha Calle also stars in her film debut, alongside Michael Shannon, Ron Livingston, Maribel Verdú, Kiersey Clemons, Antje Traue, and Michael Keaton.</p>
+                <p><strong>Release Date:</strong> June 16, 2023</p>
+            </div>
+            <div class="movie-item">
+                <h3>4.Aquaman and the Lost Kingdom</h3>
+                <img src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2022/04/aquaman-and-the-lost-kingdom-poster.jpg" alt="Aquaman and the Lost Kingdom">
+                <p>Aquaman and the Lost Kingdom is a 2023 American superhero film based on the DC Comics character Aquaman. Directed by James Wan from a screenplay by David Leslie Johnson-McGoldrick, it is the sequel to Aquaman (2018) and the 15th and final film in the DC Extended Universe (DCEU). Jason Momoa stars as Arthur Curry / Aquaman, who must work with his half-brother Orm (Patrick Wilson) to prevent Black Manta (Yahya Abdul-Mateen II) from killing his family and using the cursed Black Trident to overheat the world while searching for the lost seventh kingdom of the seas. Amber Heard, Randall Park, Dolph Lundgren, Temuera Morrison, Martin Short, and Nicole Kidman also star in supporting roles.</p>
+                <p><strong>Release Date:</strong> December 25, 2023</p>
+            </div>
+            <div class="movie-item">
+                <h3>5.Jurassic World Dominion</h3>
+                <img src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2022/04/jurassic-world-dominion-poster.jpg" alt="Jurassic World Dominion">
+                <p>Jurassic World Dominion is a 2022 American science fiction action film directed by Colin Trevorrow, who co-wrote the screenplay with Emily Carmichael from a story by Derek Connolly and Trevorrow. The sequel to Jurassic World: Fallen Kingdom (2018), it is the third installment in the Jurassic World series and the sixth installment overall in the Jurassic Park film series, concluding the original storyline that began with Jurassic Park (1993). Chris Pratt, Bryce Dallas Howard, BD Wong, and Omar Sy reprise their roles from the previous films, along with Laura Dern, Jeff Goldblum and Sam Neill, who appear together for the first time since the original Jurassic Park. Also joining the cast were DeWanda Wise and Mamoudou Athie.</p>
+                <p><strong>Release Date:</strong> June 10, 2022</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Movie Guru. All rights reserved.</p>
+    </footer>
+</body>
+</html>

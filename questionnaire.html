@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Questionnaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img height="40" src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2020/09/logo_c.png" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="questionnaire-container">
+        <h1>Answer a Few Questions</h1>
+
+        <form id="questionnaire-form">
+
+            <!-- Step 1: Mood -->
+            <!-- Step 1: Mood (Emoji Buttons) -->
+            <div class="form-step active">
+                <h2>1. How do you feel today?</h2>
+
+                <div class="emoji-options">
+                    <input type="radio" name="mood" value="happy" id="happy">
+                    <label for="happy" class="emoji-btn">😊</label>
+
+                    <input type="radio" name="mood" value="sad" id="sad">
+                    <label for="sad" class="emoji-btn">😔</label>
+
+                    <input type="radio" name="mood" value="adventurous" id="adventurous">
+                    <label for="adventurous" class="emoji-btn">🌍</label>
+
+                    <input type="radio" name="mood" value="relaxed" id="relaxed">
+                    <label for="relaxed" class="emoji-btn">😌</label>
+                </div>
+
+                <button type="button" class="next-btn" style="margin: 80px auto 0;">Next</button>
+            </div>
+
+            <!-- Step 2: Occasion -->
+            <div class="form-step">
+                <h2>2. What comes closest to your occasion?</h2>
+
+                <div class="option-group">
+                    <input type="radio" name="occasion" value="family" id="family">
+                    <label for="family" class="option-btn">👨‍👩‍👧‍👦 Family Gathering</label><br>
+
+                    <input type="radio" name="occasion" value="date" id="date">
+                    <label for="date" class="option-btn">💖 Date Night</label><br>
+
+                    <input type="radio" name="occasion" value="friends" id="friends">
+                    <label for="friends" class="option-btn">🎉 Hanging Out with Friends</label><br>
+
+                    <input type="radio" name="occasion" value="solo" id="solo">
+                    <label for="solo" class="option-btn">🎬 Watching Solo</label><br>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+
+            </div>
+
+
+            <!-- Step 3: Language -->
+            <div class="form-step">
+                <h2>3. Select the language you prefer:</h2>
+                <div class="language-options">
+                    <input type="radio" id="hindi" name="language" value="hindi">
+                    <label for="hindi">Hindi</label>
+            
+                    <input type="radio" id="english" name="language" value="english">
+                    <label for="english">English</label>
+            
+                    <input type="radio" id="marathi" name="language" value="marathi">
+                    <label for="marathi">Marathi</label>
+            
+                    <input type="radio" id="tamil" name="language" value="tamil">
+                    <label for="tamil">Tamil</label>
+                </div>
+            
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+            </div>
+
+
+
+            <!-- Step 4: Movie Industry -->
+            <div class="form-step">
+                <h2>4. Select the type of movies you like:</h2>
+                <div class="industry-options">
+                    <input type="checkbox" name="industry" value="bollywood" id="bollywood">
+                    <label for="bollywood">Bollywood</label>
+            
+                    <input type="checkbox" name="industry" value="tollywood" id="tollywood">
+                    <label for="tollywood">Tollywood</label>
+            
+                    <input type="checkbox" name="industry" value="hollywood" id="hollywood">
+                    <label for="hollywood">Hollywood</label>
+            
+                    <input type="checkbox" name="industry" value="marathi" id="marathi-option">
+                    <label for="marathi-option">Marathi</label>
+            
+                    <input type="checkbox" name="industry" value="all" id="all">
+                    <label for="all">All of the Above</label>
+                </div>
+            
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+            </div>
+            
+            
+
+            <!-- Step 5: Genre -->
+            <div class="form-step">
+                <h2>5. Please choose any genre you’re interested in.</h2>
+                <div class="genre-options">
+                    <input type="checkbox" name="genre" value="28" id="action">
+                    <label for="action">Action</label>
+            
+                    <input type="checkbox" name="genre" value="35" id="comedy">
+                    <label for="comedy">Comedy</label>
+            
+                    <input type="checkbox" name="genre" value="18" id="drama">
+                    <label for="drama">Drama</label>
+            
+                    <input type="checkbox" name="genre" value="27" id="horror">
+                    <label for="horror">Horror</label>
+            
+                    <input type="checkbox" name="genre" value="878" id="sci-fi">
+                    <label for="sci-fi">Sci-Fi</label>
+            
+                    <input type="checkbox" name="genre" value="10749" id="romance">
+                    <label for="romance">Romance</label>
+            
+                    <input type="checkbox" name="genre" value="12" id="adventure">
+                    <label for="adventure">Adventure</label>
+            
+                    <input type="checkbox" name="genre" value="53" id="thriller">
+                    <label for="thriller">Thriller</label>
+            
+                    <input type="checkbox" name="genre" value="16" id="animation">
+                    <label for="animation">Animation</label>
+            
+                    <input type="checkbox" name="genre" value="14" id="fantasy">
+                    <label for="fantasy">Fantasy</label>
+            
+                    <input type="checkbox" name="genre" value="36" id="history">
+                    <label for="history">History</label>
+            
+                    <input type="checkbox" name="genre" value="80" id="crime">
+                    <label for="crime">Crime</label>
+            
+                    <input type="checkbox" name="genre" value="10402" id="music">
+                    <label for="music">Music</label>
+            
+                    <input type="checkbox" name="genre" value="99" id="documentary">
+                    <label for="documentary">Documentary</label>
+            
+                    <input type="checkbox" name="genre" value="37" id="western">
+                    <label for="western">Western</label>
+            
+                    <input type="checkbox" name="genre" value="10751" id="family-option">
+                    <label for="family-option">Family</label>
+            
+                    <input type="checkbox" name="genre" value="10752" id="war">
+                    <label for="war">War</label>
+            
+                    <input type="checkbox" name="genre" value="9648" id="mystery">
+                    <label for="mystery">Mystery</label>
+                </div>
+            
+                <div class="form-navigation">
+                    <button type="button" class="prev-btn">Previous</button>
+                    <button type="button" class="submit-btn" onclick="submitPreferences()">Submit</button>
+                </div>
+            </div>
+            
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

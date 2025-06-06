@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Movie Guru</title>
+    <style>
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    /* background-color: rgba(255, 255, 255, 0.2);
+    color: #f0f0f0; */
+    text-decoration: underline;
+}
+
+main {
+    padding: 80px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #bbbbbb;
+}
+
+#blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.blog-post {
+    display: flex;
+    background: #3e3b3b;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-post img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-post .content {
+    padding: 25px;
+}
+
+.blog-post h2 {
+    margin: 0 0 10px;
+}
+
+.blog-post p {
+    color: #bbbbbb;
+    margin-bottom: 25px;
+}
+
+.blog-post button {
+    background: #ff9800;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.blog-post button:hover {
+    background: #b54800;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/736x/19/8b/2f/198b2f01e73b905772279616eccc7c65.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity for darkness */
+    z-index: -1; /* Keeps the overlay behind the content */
+    pointer-events: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-post img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body class="blog">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img height="40" src="https://pickamovieforme.b-cdn.net/wp-content/uploads/2020/09/logo_c.png" alt="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="genre.html">Genre</a></li>
+                <li><a href="topactor.html">Top Actors</a></li>
+                <li><a href="blog.html">Blog</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <h1>BLOG</h1> -->
+        <section id="blog-posts">
+            <div class="blog-post">
+                <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2024/12/most-anticipated-films-of-2025.jpg" alt="Upcoming Movies">
+                <div class="content">
+                    <h2>The Biggest Upcoming Movies</h2>
+                    <p>Explore the most anticipated movies set to release soon. From action-packed blockbusters to intriguing dramas...</p>
+                    <button onclick="openBlog('movie-list.html')">Read More</button>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoXS7ujNwcMHQr_Xxlqpx8k-2WqcDTphOSA&s" alt="Spider-Man Review">
+                <div class="content">
+                    <h2>Spider-Man: No Way Home Review</h2>
+                    <p>Take a deep dive into the Marvel sensation and discover why it's breaking records worldwide...</p>
+                    <button onclick="openBlog('spider-man-review.html')">Read More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Movie Guru. All rights reserved.</p>
+    </footer>
+    <script>
+        function openBlog(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
