@@ -1,3 +1,7 @@
+function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("show");
+  }
 // Redirect to the questionnaire page
 function redirectToQuestionnaire() {
     window.location.href = 'questionnaire.html';
