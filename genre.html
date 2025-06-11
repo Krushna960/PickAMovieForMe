@@ -316,6 +316,8 @@ const moviesContainer = document.getElementById('movies-container');
 async function fetchMoviesByGenre(genreId) {
     try {
         moviesContainer.innerHTML = '<p>Loading movies...</p>';
+        document.getElementById('genre-buttons').style.display = 'none';
+
 
         const languages = [ 'hi', 'te', 'ta', 'mr','en',]; // English, Hindi, Telugu, Tamil, Marathi
         let allMovies = [];
