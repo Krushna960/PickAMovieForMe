@@ -146,7 +146,7 @@ async function fetchMovies() {
     }
 
     const { language, genres } = preferences;
-    const API_KEY = 'dea6fa58fd19aa04a29a6333d919fab2';
+    const API_KEY = 'YOUR_API_KEY_HERE';
     const BASE_URL = 'https://api.themoviedb.org/3';
 
     const languageMap = { "english": "en", "hindi": "hi", "marathi": "mr", "tamil": "ta" };
