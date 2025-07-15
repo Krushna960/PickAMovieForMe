@@ -155,7 +155,7 @@ async function fetchMovies() {
     const genreIds = genres.join(',');
 
     try {
-        const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreIds}&with_original_language=${languageCode}&sort_by=popularity.desc`;
+        const url = `/.netlify/functions/fetchMovies?genre=${genreId}&lang=${lang}`;
         const response = await fetch(url);
         const data = await response.json();
 
