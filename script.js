@@ -77,7 +77,7 @@ async function fetchMovies() {
     const { language, genres } = preferences;
 
     // TMDB API settings
-    const API_KEY = 'dea6fa58fd19aa04a29a6333d919fab2';
+    const API_KEY = 'YOUR_API_KEY_HERE';//enter your API key here
     const BASE_URL = 'https://api.themoviedb.org/3';
 
     // Language mapping for API
@@ -88,7 +88,7 @@ async function fetchMovies() {
 
     try {
         // Fetch movies from TMDB API
-        const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreIds}&with_original_language=${languageCode}&sort_by=popularity.desc`;
+        const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreId}&with_original_language=${lang}&sort_by=popularity.desc`;
         const response = await fetch(url);
         const data = await response.json();
 
