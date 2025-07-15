@@ -88,7 +88,7 @@ async function fetchMovies() {
 
     try {
         // Fetch movies from TMDB API
-        const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreId}&with_original_language=${lang}&sort_by=popularity.desc`;
+        const url = `/.netlify/functions/fetchMovies?genre=${genreId}&lang=${lang}`;
         const response = await fetch(url);
         const data = await response.json();
 
