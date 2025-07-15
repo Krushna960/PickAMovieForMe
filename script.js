@@ -77,7 +77,7 @@ async function fetchMovies() {
     const { language, genres } = preferences;
 
     // TMDB API settings
-    const API_KEY = 'YOUR_API_KEY_HERE';//enter your API key here
+    const API_KEY = 'dea6fa58fd19aa04a29a6333d919fab2';
     const BASE_URL = 'https://api.themoviedb.org/3';
 
     // Language mapping for API
@@ -88,7 +88,7 @@ async function fetchMovies() {
 
     try {
         // Fetch movies from TMDB API
-        const url = `/.netlify/functions/fetchMovies?genre=${genreId}&lang=${lang}`;
+        const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreIds}&with_original_language=${languageCode}&sort_by=popularity.desc`;
         const response = await fetch(url);
         const data = await response.json();
 
@@ -146,7 +146,7 @@ async function fetchMovies() {
     }
 
     const { language, genres } = preferences;
-    const API_KEY = 'YOUR_API_KEY_HERE';
+    const API_KEY = 'dea6fa58fd19aa04a29a6333d919fab2';
     const BASE_URL = 'https://api.themoviedb.org/3';
 
     const languageMap = { "english": "en", "hindi": "hi", "marathi": "mr", "tamil": "ta" };
@@ -155,7 +155,7 @@ async function fetchMovies() {
     const genreIds = genres.join(',');
 
     try {
-        const url = `/.netlify/functions/fetchMovies?genre=${genreId}&lang=${lang}`;
+        const url = `${BASE_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreIds}&with_original_language=${languageCode}&sort_by=popularity.desc`;
         const response = await fetch(url);
         const data = await response.json();
 
